@@ -28,7 +28,7 @@ PRIMARY KEY (StudentNumber));
 
 <br><br>
 
-2. 테이블 구조 확인 
+2. 테이블 구조 확인.
 
 ## <span style="color:blue"> desc STUDENT</span>
 Field|Type|Null|Key|Default|Extra
