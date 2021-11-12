@@ -28,7 +28,7 @@ PRIMARY KEY (StudentNumber));
 
 <br><br>
 
-2. 테이블 구조 확인
+2. 테이블 구조 확인 
 
 ## <span style="color:blue"> desc STUDENT</span>
 Field|Type|Null|Key|Default|Extra
@@ -42,7 +42,7 @@ Email|varchar(60)|YES|   |NULL|
 
 - 테이블 구조 확인을 위해 desc STUDENT명령어 입력
 
-- 필드별로 타입과 NULL유무, PK,FK확인, DEFAULT 설정확인가능
+- 필드별로 타입과 NULL유무, PK,FK확인 DEFAULT 설정확인가능
 
 
 <br><br>
