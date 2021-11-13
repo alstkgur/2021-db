@@ -1,0 +1,22 @@
+<!--전체 데이터 조회를 위한 테이블 구조 구현 -->
+<!--title은 select.js에서 학생테이블에 들어감 -->
+<h1>{{ title }}</h1>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Student_Number</td>
+        <td>Class</td>
+        <td>Major</td>
+    </tr>
+    {{#each student}}
+    <tr>
+        <td>{{Name}}</td>
+        <td>{{Student_Number}}</td>
+        <td>{{Class}}</td>
+        <td>{{Major}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+

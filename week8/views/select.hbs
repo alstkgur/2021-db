@@ -1,0 +1,57 @@
+<!--전체 데이터 조회를 위한 테이블 구조 구현 -->
+<!--title은 select.js에서 직원테이블에 들어감 -->
+<h1>{{ title }}</h1>
+
+<table>
+    <tr>
+        <td>Fname</td>
+        <td>Minit</td>
+        <td>Lname</td>
+        <td>Ssn</td>
+        <td>Bdate</td>
+        <td>Address</td>
+        <td>Sex</td>
+        <td>Salary</td>
+        <td>Super_ssn</td>
+        <td>Dno</td>
+    </tr>
+    {{#each employee}}
+    <tr>
+        <td>{{Fname}}</td>
+        <td>{{Minit}}</td>
+        <td>{{Lname}}</td>
+        <td>{{Ssn}}</td>
+        <td>{{Bdate}}</td>
+        <td>{{Address}}</td>
+        <td>{{Sex}}</td>
+        <td>{{Salary}}</td>
+        <td>{{Super_ssn}}</td>
+        <td>{{Dno}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+
+<!--title2는 부서테이블 -->
+<h1>{{  title2  }}</h1>
+
+<!--테이블 만들때 태그 -->
+<table>
+    <tr>  <!--행 -->  
+
+        <!--필드이름이므로 한번만 만들면 됨 -->
+        <td>Dname</td>  <!--열 -->
+        <td>Dnumber</td>
+        <td>Mgr_ssn</td>
+        <td>Mgr_start_date</td>
+    </tr>
+    {{#each department}}  <!--department를 반복해서 쓰는것 -->
+    <tr>
+        <!--실제 값을 입력한것-->
+        <td>{{Dname}}</td>
+        <td>{{Dnumber}}</td>
+        <td>{{Mgr_ssn}}</td>
+        <td>{{Mgr_start_date}}</td>
+    </tr>
+    {{/each}}
+</table>
