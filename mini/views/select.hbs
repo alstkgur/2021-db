@@ -1,0 +1,55 @@
+<!--전체 데이터 조회를 위한 테이블 구조 구현 -->
+<!--title은 select.js에서 학생테이블에 들어감 -->
+<h1>{{ title }}</h1>
+
+<table>
+    <tr>
+        <td>airport_code</td>
+      <td>name</td>
+      <td>city</td>
+      <td>state</td>
+    </tr>
+    {{#each airport}}
+    <tr>
+        <td>{{airport_code}}</td>
+        <td>{{name}}</td>
+        <td>{{city}}</td>
+        <td>{{state}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<br><br>
+
+<table>
+    <tr>
+        <td>airplane_id</td>
+      <td>total_number_of_seats</td>
+      <td>airplane_type</td>
+    </tr>
+    {{#each airplane}}
+    <tr>
+        <td>{{airplane_id}}</td>
+        <td>{{total_number_of_seats}}</td>
+        <td>{{airplane_type}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<br><br>
+
+<table>
+    <tr>
+        <td>flight_number</td>
+      <td>airline</td>
+      <td>weekdays</td>
+    </tr>
+    {{#each flight}}
+    <tr>
+        <td>{{flight_number}}</td>
+        <td>{{airline}}</td>
+        <td>{{weekdays}}</td>
+    </tr>
+    {{/each}}
+</table>
+

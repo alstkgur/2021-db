@@ -1,0 +1,27 @@
+<!--데이터 수정을 위한 테이블 구조 구현 -->
+
+<h1>{{ title }}</h1>
+
+<table>
+    <tr>
+      <td>flight_number</td>
+      <td>airline</td>
+      <td>weekdays</td>
+    </tr>
+    <!--데이터가 있을때마다 반복실행 -->
+    {{#each flyt_res}}  <!--원래는 flight이지만 이름을 바꿀 수 있음-->
+        <form method="post">
+            <tr>
+                <!-- input tag를 사용하여 입력 가능한 형태로 변경함(다른방법도 검색하면 있음)  -->
+                <!-- placeholder는 입력하는 공간에 미리 적혀있는 예시값? -->
+                <!-- input을 주었기 때문에 입력가능-->
+                <td><input type="text" name="flight_number" placeholder={{flight_number}}></td>
+                <td>{{airline}}</td>
+                <td>{{weekdays}}</td>
+                <!-- formaction 속성을 활용하여 입력한 값을 넘겨줌 -->
+                <!--formaction은 update.js에서의 router.post에서 데이터 처리 -->
+                <td><input type="submit" value="수정" formaction="/update/flight"></td>
+            </tr>
+        </form>
+    {{/each}}
+</table>

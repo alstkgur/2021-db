@@ -1,0 +1,25 @@
+<!--데이터 삽입을 위한 form 구현 -->
+<!--타이틀 만듬 -->
+<!--insert.js에서 써야할것을 템플릿 양식을 외부의 handlebars(hbs) 파일로 생성한것. 일종의 외장모듈-->
+<h1>flight 데이터 삽입</h1>
+
+<!--action은 데이터를 어떤페이지에 넘겨줄 것인가? -->
+<!--method(값)은 post로 넘김. home.js가보면 거기서 처리하는 코드 있음-->
+<form name="flight" method="post" action ='/'>
+    <div>
+        <label for="flight_number">flight_number</label>
+        <input id="flight_number" name="flight_number" type="text" required placeholder="flight_number">
+    </div>
+    <div>
+        <label for="airline">airline</label>
+        <input id="airline" name="airline" type="text" placeholder="airline">
+    </div>
+    <div>
+        <label for="weekdays">weekdays</label>
+        <input id="weekdays" name="weekdays" type="text" placeholder="weekdays">
+    </div>
+    <div>
+        <input type="submit" value="삽입">
+    </div>
+   
+</form>

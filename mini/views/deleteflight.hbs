@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+<table>
+  <tr>
+    <td>flight_number</td>
+    <td>airline</td>
+    <td>weekdays</td>
+  </tr>
+  {{#each flight}}
+    <form method="post">
+      <tr>
+        <td>{{flight_number}}</td>
+        <td>{{airline}}</td>  
+        <td>{{weekdays}}</td>  
+        <td style="border: none; margin-left: 10px;">
+          <button  
+            style="margin-left: 10px;"
+            type="submit" 
+            name="delBtn"
+            value= "{{Name}}"
+            formaction="/delete"
+            >
+          삭제
+          </button>
+        </td>
+      </tr>    
+    </form>
+  {{/each}}
+</table>
