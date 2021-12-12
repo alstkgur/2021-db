@@ -24,7 +24,11 @@ PRIMARY KEY (StudentNumber));
 - 테이블 생성
 
 - 필드와 자료형, NULL유무 기입
+<<<<<<< HEAD
 -  PRIMARY KEY로 StudentNumber설정
+=======
+-  PRIMARY KEY로 StudentNumber설정.
+>>>>>>> 7356c3f9455a6c793e0937ff869c5769449006ea
 
 <br><br>
 

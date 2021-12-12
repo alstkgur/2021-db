@@ -30,11 +30,9 @@ router.post('/', async (req, res) => {
     //콘솔로그를 찍어 실제로 전달받은 값이 잘 나오는지 출력해봄
     console.log('delete router:', req.body.delBtn);
 
-    //data에 Name값 저장
-    const data = {  
+    const data = {  //data에 Name값 저장
         Name: req.body.delBtn,
     };
-    
     await deleteSql.deleteStudent(data);  //이 함수에 data를 넘겨줌. sql.js에서 data받아 수행
     res.redirect('/delete');  //localhost:3000/delete로...
 });
